@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-hello
+Blog
+</br>
+{% for project in projects %}
+
+<h2> {{ project.title }} </h2>
+
+
+</br>
+<h5> {{ project.date }} </h5>
+
+</br>
+{{ project.description }}
+
+{% endfor %}
+
+
+
 </body>
 </html>
