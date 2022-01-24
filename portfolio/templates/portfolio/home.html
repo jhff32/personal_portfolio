@@ -7,6 +7,12 @@
 <body>
 <Andrii Portfolio/>
 
+{% load static %}
+
+<a href="{% static 'portfolio/resume.pdf' %}">Resume</a>
+
+<img src="{% static 'portfolio/photo1.jpg' %}">
+
 {% for project in projects %}
 
 <h2> {{ project.title }} </h2>
