@@ -7,9 +7,11 @@
 <body>
 <Andrii Portfolio/>
 
+<a href="{% url 'blog:all_blogs' %}">Blog</a>
 {% load static %}
 
 <a href="{% static 'portfolio/resume.pdf' %}">Resume</a>
+<br/>
 
 <img src="{% static 'portfolio/photo1.jpg' %}">
 
